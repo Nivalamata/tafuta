@@ -1,0 +1,25 @@
+{
+  "name": "tafuta",
+  "version": "0.0.1",
+  "description": "command line utility that scan and copy files from root directory and walk across subdirectories",
+  "main": "app.js",
+  "preferGlobal": true,
+  "bin": {
+    "tafuta": "./app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tafuta"
+  },
+  "keywords": [
+    "cli",
+    "search",
+    "scan",
+    "copy"
+  ],
+  "author": "goodluck mlwilo",
+  "license": "ISC"
+}
