@@ -21,5 +21,11 @@
     "copy"
   ],
   "author": "goodluck mlwilo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "0.x.x",
+    "hashmap": "2.x.x",
+    "recursive-readdir": "1.x.x"
+  },
+  "devDependencies": {}
 }
