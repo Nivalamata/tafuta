@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "tafuta"
+    "url": "https://github.com/nivalamata/tafuta.git"
   },
   "keywords": [
     "cli",
@@ -20,8 +20,8 @@
     "scan",
     "copy"
   ],
-  "author": "goodluck mlwilo",
-  "license": "ISC",
+  "author": "nivalamata",
+  "license": "Apache",
   "dependencies": {
     "fs-extra": "0.x.x",
     "hashmap": "2.x.x",
