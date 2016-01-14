@@ -8,6 +8,7 @@ var reader = require("./reader");
 var menu = require("./menu");
 var scan = require("./scan");
 var path = require("path");
+var os = require("os");
 var fs = require("fs-extra");
 
 //Data variables
@@ -20,6 +21,8 @@ var fileType = {
 	pictures: [".png", ".jpg", ".jpeg", ".gif"],
 	apps: [".exe", ".jar", ".deb", ".tar.gz", ".zip", ".sql", ".iso"]
 }
+
+var homeDir = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
 
 console.log("                  Mambo Dunia         ");
 reader.getInput("Enter number to choose resource  type [1-5] \n", true, processSelectionCB);
@@ -72,7 +75,7 @@ function prepareCopyCB(foundFiles, answer) {
 	if (answer < foundFiles.length) {
 		var selectedFile = foundFiles[answer].keys();
 		var source = selectedFile[0];
-		var destination = "/home/qude/Desktop/" + path.basename(source);
+		var destination = homeDir + "/Desktop/" + path.basename(source);
 		fs.copy(source, destination, copyFileCB);
 	}
 
